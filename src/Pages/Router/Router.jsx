@@ -11,10 +11,13 @@ const Router = () => {
             <div className='w-[20%] border border-l-slate-500'>
                 <Sidebar/>
             </div>
-            <div className='w-full'>
+            {/* className='w-[63%] px-[10%]' */}
+            <div className='w-fill'>
                 <Routes>
                     <Route path='/' element={<HomePage />}></Route>
+                    
                     <Route path='/username' element={<Profile />}></Route>
+                    
                 </Routes>
             </div>
         </div>
