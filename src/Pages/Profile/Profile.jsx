@@ -7,7 +7,7 @@ function Profile() {
     <div className='flex flex-col pl-30'>
         <div>
         <ProfileUserDetails/>
-        </div>
+          </div>
         <div>
             <ProfileUserPostPart/>
         </div>
