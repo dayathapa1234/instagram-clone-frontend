@@ -59,8 +59,9 @@ const CreatePostModal = ({onClose, isOpen}) => {
             <hr/>
             <ModalBody>
             <div className='h-[70vh] justify-between pb-5 flex'>
-                <div className='w-[50%]'>
-                    {!file && <div className='drag-drop h-full' onDrop={handleDrop} onDragOver={handleDragOver} onDragLeave={handleDragLeave} setIsDragOver={isDragOver}>
+                <div className='w-[50%] flex flex-col justify-center'>
+                    {!file && 
+                    <div className='drag-drop h-full' onDrop={handleDrop} onDragOver={handleDragOver} onDragLeave={handleDragLeave} setIsDragOver={isDragOver}>
                         <div>
                             <FaPhotoVideo className="text-3xl"/>
                             <p>Drag Photo or Video Here</p>

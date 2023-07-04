@@ -26,11 +26,13 @@ const StoryViewer = ({stories}) => {
             setActiveIndex(0);
         }
     }
-
+    /* eslint-disable */
     useEffect(()=>{
-        const interval = setInterval(()=>{handleNextStory()},2000)
+        
+        const interval = setInterval(()=>{handleNextStory()},2000);
         return () => clearInterval(interval);
     },[currentStoryIndex])
+    /* eslint-enable */
 
   return (
     <div className='relative w-full'>
